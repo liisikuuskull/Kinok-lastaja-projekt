@@ -48,6 +48,9 @@ Manuaalne testimine TestRaili-ga:
 
 
 ##Mysql
+Tegin andmebaasi nimega cinema. Seal sees on kaks tabelit filmide list ja paar testkasutajat. 
+
+<img width="1434" alt="Screenshot 2024-03-26 at 15 35 17" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/f95dcc1a-4747-4ada-8c37-7b1da5b112b0">
 
 
 ##Tööks kulunud aeg
