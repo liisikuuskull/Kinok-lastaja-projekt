@@ -25,8 +25,19 @@ Lehe vaated:
 2. Films http://127.0.0.1:5500/kino/src/main/resources/static/films.html
 <img width="1436" alt="Screenshot 2024-03-26 at 16 15 49" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/5b92d0e2-1bbf-4a53-92d8-14edac6e4b95">
 
+3. Show Times http://127.0.0.1:5500/kino/src/main/resources/static/showtimes.html
+<img width="1432" alt="Screenshot 2024-03-26 at 17 56 16" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/20347e32-9e4e-4a1e-884b-6e910268b473">
 
+4.Login http://127.0.0.1:5500/kino/src/main/resources/static/login.html
+<img width="1052" alt="Screenshot 2024-03-26 at 17 57 38" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/b5452d27-c761-4090-99a9-20d3c5320eee">
 
+5. Register http://127.0.0.1:5500/kino/src/main/resources/static/register.html
+<img width="897" alt="Screenshot 2024-03-26 at 17 59 47" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/f2c600f6-a1e3-4ac4-bad9-ca8046f92a0d">
+<img width="732" alt="Screenshot 2024-03-26 at 17 59 58" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/5c81e064-55fa-4bfc-b705-18ff7ec28755">
+
+6. Hall1 Plan http://127.0.0.1:5500/kino/src/main/resources/static/hall1plan.html
+
+<img width="1334" alt="Screenshot 2024-03-26 at 18 01 27" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/9cea9d32-2b60-47f2-a828-a3b60753b381">
 
 ##Testimine
 
