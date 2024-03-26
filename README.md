@@ -2,47 +2,46 @@
 
 See projekt on loodud kinokülastajate haldamiseks, sealhulgas nende registreerimiseks, sisselogimiseks ja filmide hinnangute jälgimiseks.
 
+
 #Kasutatud tehnoloogiad
 
-Back-end: PHP
-Andmebaas: MySQL
-Testimine: Cypress
-Dokumentatsioon: TestRail
-Käivitamine
+* Back-end: PHP
+* Andmebaas: MySQL
+* Testimine: Cypress
+* Manuaalne testimine: TestRail 
 
-Kloneerige projekt enda arvutisse:
-bash
-Copy code
-git clone https://github.com/liisikuuskull/Kino.git
-Laadige alla vajalikud sõltuvused:
-Copy code
-composer install
-Seadistage andmebaasikonfiguratsioon vastavalt enda keskkonnale, muutes faili config.php.
-Käivitage PHP sisseehitatud server:
-Copy code
-php -S localhost:8000
-Avage veebibrauser ja minge aadressile http://localhost:8000.
-Testimine
 
-Projekti testimiseks kasutatakse Cypressi. Testide käivitamiseks:
+#Käivitamine
 
-arduino
-Copy code
-npm install
-npm run cypress:open
-Dokumentatsioon
+.......
 
-Projekti dokumentatsioon on koostatud TestRailis. Kõik testjuhud ja tulemused on seal jälgitavad.
 
-Tööaja arvestus
+#Testimine
 
-Tööks kulunud aeg: [sisestage siia aeg]
+Tegin mõned automaattestid Cypressiga:
 
-Raskused ja lahendused
 
-Back-endi valik: Algul prooviti kasutada Spring Booti, kuid see ei õnnestunud. Seetõttu valiti lõpuks PHP.
-Andmebaasiga ühenduse seadistamine: Esialgu oli keeruline seadistada andmebaasiga ühendust, kuid see lahendati, muutes andmebaasi konfiguratsioonifaili.
-Autentimise ja autoriseerimise rakendamine: PHP-s autentimise ja autoriseerimise rakendamine oli keerukam kui oodatud, kuid see lahendati, uurides dokumentatsiooni ja näiteprojekte.
-Järeldus
 
-Kokkuvõttes oli projekt väljakutseid pakkuv, kuid õpetlik kogemus. Õnnestusid põhilised funktsionaalsused, kuid oleks võimalik veel täiendusi teha ja koodi refaktoreerida.
+
+
+Testide käivitamine:
+
+
+
+
+
+
+#Tööks kulunud aeg
+
+Tegelesin selle projektiga peaaegu igapäev, nädalavahetustel mitte nii väga. Üritasin maksimaalselt seda aega ära kasutada, mis projekti tegemiseks anti. 
+
+
+
+#Raskused ja lahendused
+
+Alguses tundus kõik raske, aga siis hakkasin lihtsalt midagi tegema ja tekkisid ideed kuidas üks või teine asi võiks olla.
+Tahtsin kasutada Spring Booti, kuid see ei õnnestunud, sest Maveniga oli mingi jama. Siis ma üritasin back-endi poolt teha PHP-ga.
+
+#Järeldus
+
+Kokkuvõttes oli projekt väljakutseid pakkuv, kuid õpetlik kogemus. Aega oleks võinud olla rohkem, sest back-endi pool oli raske. Spring Bootiga ma ei ole varem kokku puutunud ja otsisin netist selle kohta infot. Vaatasin, et www.udemy.com lehel on ka koolitusi selle kohta, aga kuna need olid sellel hetkel täishinnaga ei ostnud ma sealt midagi.
