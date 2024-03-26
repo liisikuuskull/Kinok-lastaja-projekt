@@ -36,7 +36,7 @@ Tegin mõned automaattestid Cypressiga:
 
 Testide käivitamine Cypressiga:
   npx cypress open (see avab Cypressi kasutajaliidese)
-
+  npx cypress run (käivitab Cypress testimisskriptid otse terminalis)
 
 Manuaalne testimine TestRaili-ga:
 
