@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #b3e6ff; 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+input[type="submit"] {
+    background-color: #03C03C;
+    color: white; 
+    border: none; 
+    border-radius: 1em;
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+input[type="submit"]:hover {
+    background-color: darkgreen; 
+}
+
+.form-container {
+    position: relative;
+    left: 20px;
+}

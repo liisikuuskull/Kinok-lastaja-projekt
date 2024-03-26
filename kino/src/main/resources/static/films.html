@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="css/frontpage.css">
+    <header>
+        <div class="wrapper navbar">
+            <a href="frontpage.html" class="logo" id="logo">StarCinema</a>
+            <nav>
+                <ul>
+                    <li><a href="frontpage.html" onclick="scrollToDown()">Home</a></li>
+                    <li><a href="films.html">Films</a></li>
+                    <li><a href="showtimes.html">Show Times</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+         </div>
+    </header>
+
+    <style>
+        
+        body {
+            background-color: #1c1a33;
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white; 
+        }
+
+        header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #302e47;
+    padding: 2.5em;
+    z-index: 1000;
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 3.3em;
+}
+
+ul li a {
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+ul li a:hover {
+    color: #8e7cc3;
+}
+
+        h1 {
+            margin-bottom: 1.2em;
+            margin-left: 2em;
+            border-bottom: 2px solid #6f7ce0;
+        }
+
+        
+        .showtimes-table {
+            margin-top: 2em; 
+            margin-left: 5em;
+
+        }
+
+        .showtimes-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .showtimes-table th,
+        .showtimes-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #fff; 
+        }
+
+        .showtimes-table th {
+            background-color: #8e7cc3; 
+        }
+
+        .showtimes-table tbody tr:nth-child(odd) {
+            background-color: #2F3740; 
+        }
+
+        .showtimes-table tbody tr:nth-child(even) {
+            background-color: #1c1a33; 
+        }
+
+        .showtimes-table tbody td {
+            color: white; 
+        }
+
+        /* Highlight class for search */
+        .showtimes-table tbody tr.highlight td {
+            background-color: lightgreen;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+            margin-left: 5em;
+        }
+
+        .search-input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .filter-radio {
+            margin-right: 10px;
+        }
+
+        .age-input {
+            margin-right: 10px;
+        }
+
+        .search-btn {
+            padding: 5px 20px;
+            background-color: #6f7ce0;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 1em;
+        }
+        .search-btn:hover {
+            background-color: #4852a3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie List</h1>
+
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Search...">
+        <input type="radio" name="filter" value="title" class="filter-radio" checked>Title
+        <input type="radio" name="filter" value="genre" class="filter-radio">Genre
+        <input type="radio" name="filter" value="age" class="filter-radio">Age
+        <button id="search-btn" class="search-btn">Search</button>
+    </div>
+
+    <table class="showtimes-table">
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Age Limit</th>
+        </tr>
+        <tr>
+            <td>The Nun</td>
+            <td>Horror</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>The Whale</td>
+            <td>Drama</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Frozen</td>
+            <td>Animation</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>The Matrix</td>
+            <td>Action</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Me, Myself & Irine</td>
+            <td>Comedy</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Avatar</td>
+            <td>Fantasy</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>Coco</td>
+            <td>Animation</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>It</td>
+            <td>Horror</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>Jurassic World Dominion</td>
+            <td>Fantasy</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>12 Years a Slave</td>
+            <td>Drama</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Mr. Bean's Holiday</td>
+            <td>Comedy</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Toy Story</td>
+            <td>Animation</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Kill Bill: Vol 1</td>
+            <td>Action</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>Titanic</td>
+            <td>Drama</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>One Life</td>
+            <td>Drama</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>The Father</td>
+            <td>Drama</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>M3gan</td>
+            <td>Horror</td>
+            <td>11</td>
+        </tr>
+       
+    </table>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("search-btn").addEventListener("click", function() {
+        const input = document.getElementById("search-input").value.toLowerCase(); // Muudame sisendi väiketähtedeks
+        const filter = document.querySelector('input[name="filter"]:checked').value;
+        const rows = document.querySelectorAll(".showtimes-table tbody tr");
+
+        let resultsFound = false; 
+
+        
+        rows.forEach(row => {
+            row.classList.remove("highlight");
+        });
+
+        
+        rows.forEach(row => {
+            let content = row.cells[0].textContent.toLowerCase(); 
+            if (filter === "genre") {
+                content = row.cells[1].textContent.toLowerCase(); 
+            } else if (filter === "age") {
+                content = row.cells[2].textContent.toLowerCase(); 
+            }
+            if (content.includes(input)) {
+                row.classList.add("highlight"); 
+                resultsFound = true; 
+            }
+        });
+
+        // Kui tulemusi ei leita, kuvame vastava teate EI TÖÖTA
+        if (!resultsFound) {
+            alert("No results found for the provided search criteria.");
+        }
+    });
+});
+
+  
+    </script>
+</body>
+</html>

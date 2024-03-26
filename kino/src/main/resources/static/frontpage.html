@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarCinema</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/frontpage.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper navbar">
+            <a href="frontpage.html" class="logo" id="logo">StarCinema</a>
+            <nav>
+                <ul>
+                    <li><a href="frontpage.html" onclick="scrollToDown()">Home</a></li>
+                    <li><a href="films.html">Films</a></li>
+                    <li><a href="showtimes.html">Show Times</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+         </div>
+    </header>
+
+    <div class="container">
+        
+    </div>
+
+    <h1>Now Playing</h1>
+
+<div class="articles-container">
+    <article class="avatar">
+        <a href="#"><img src="assets/image.jpg" alt="avatar"></a>
+        <h2> Avatar</h2>
+        <p>The story takes place on Pandora, a moon of a far away planet, in the year 2154. The movie opens with Jake Sully (played by Sam Worthington), a paraplegic marine, getting into a fight in a bar on Earth before he goes to Pandora. Pandora is a fictional Earth-like moon in a distant planetary system.
+
+            Some humans have traveled from Earth to Pandora because it is a source of a very valuable mineral called unobtanium. The largest deposit of the mineral is under a large tree that the local Na'vi people have named "Hometree" (kelutral in the Na'vi language). The tree is very important to the Na'vi...</p>
+            <button class="buy-ticket-btn" onclick="window.location.href='showtimes.html'">Buy Ticket</button>
+    </article>
+
+    <article class="jurassic">
+        <a href="#"><img src="assets/jurassic.jpg" alt="jurassic-world"></a>
+        <h2> Jurassic World</h2>
+        <p>Jurassic World Dominion is a 2022 American science fiction action film directed by Colin Trevorrow, who co-wrote the screenplay with Emily Carmichael from a ...</p>
+        <button class="buy-ticket-btn" onclick="window.location.href='showtimes.html'">Buy Ticket</button>
+    </article>
+
+    <article class="coco">
+        <a href="#"><img src="assets/coco.jpeg" alt="coco"></a>
+        <h2>Coco</h2>
+        <p>The story follows a 12-year-old boy named Miguel (Gonzalez) who is accidentally transported to the Land of the Dead, where he seeks the help of his deceased ...</p>
+        <button class="buy-ticket-btn" onclick="window.location.href='showtimes.html'">Buy Ticket</button>
+    </article>
+
+    <article class="megan">
+        <a href="#"><img src="assets/megan.png" alt="megan"></a>
+        <h2>M3gan</h2>
+        <p>Its plot follows an artificially intelligent doll, who develops self-awareness and becomes hostile toward anyone who comes between her and her human companion.  ...</p>
+        <button class="buy-ticket-btn" onclick="window.location.href='showtimes.html'">Buy Ticket</button>
+    </article>
+
+    <article class="it">
+        <a href="#"><img src="assets/it.jpg" alt="it"></a>
+        <h2>It</h2>
+        <p>In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town....</p>
+        <button class="buy-ticket-btn" onclick="window.location.href='showtimes.html'">Buy Ticket</button>
+    </article>
+</div>
+
+<div class="coming-soon-section">
+    <h1>Coming Soon</h1>
+    <div class="image-grid">
+        <article class="avatar">
+            <a href="#"><img src="assets/garfield.png" alt="garfield"></a>
+            <h2> Garfield</h2>
+            <p>Garfield is about to go on a wild outdoor adventure. After an unexpected reunion with his long-lost father - the cat Vic - Garfield and Odie are forced to abandon their pampered life to join Vic in a hilarious, high-stakes heist....</p>
+        </article>
+        <article class="jurassic">
+            <a href="#"><img src="assets/ghost.png" alt="ghost"></a>
+            <h2>Ghostbusters: Frozen Empire</h2>
+            <p>When the discovery of an ancient artifact unleashes an evil force, Ghostbusters new and old must join forces to protect their home and save the world from a second ice age....</p>
+        </article>
+        <article class="coco">
+            <a href="#"><img src="assets/alien.png" alt="alien"></a>
+            <h2>Alien: Romulus</h2>
+            <p>While scavenging the deep ends of a derelict space station, a group of young space colonizers come face to face with the most terrifying life form in the universe....</p>
+        </article>
+    </div>
+</div>
+
+    <script>
+        function scrollToDown() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,15 @@
+
+body {
+    background-color: #1c1a33;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-top: 15rem;
+}
+
+p {
+    color: white;
+}

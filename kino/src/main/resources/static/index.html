@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+     <!-- Lisage siia @fullcalendar/core ja @fullcalendar/daygrid CDN-id -->
+     <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <ul>
+                
+                <!-- Link to the login page -->
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="register.html">User Registration</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+    <!-- Kalendri konteiner -->
+    <div id="calendar"></div>
+
+    <h1>Movie List</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Age Limit</th>
+        </tr>
+        <tr>
+            <td>The Nun</td>
+            <td>Horror</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>The Whale</td>
+            <td>Drama</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Frozen</td>
+            <td>Animation</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>The Matrix</td>
+            <td>Action</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Me, Myself & Irine</td>
+            <td>Comedy</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Avatar</td>
+            <td>Fantasy</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>Coco</td>
+            <td>Animation</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>It</td>
+            <td>Horror</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>Jurassic World Dominion</td>
+            <td>Fantasy</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>12 Years a Slave</td>
+            <td>Drama</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Mr. Bean's Holiday</td>
+            <td>Comedy</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Toy Story</td>
+            <td>Animation</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Kill Bill: Vol 1</td>
+            <td>Action</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>Titanic</td>
+            <td>Drama</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>One Life</td>
+            <td>Drama</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>The Father</td>
+            <td>Drama</td>
+            <td>12</td>
+        </tr>
+        <!-- You can add more rows as needed -->
+    </table>
+
+    <table>
+        <tr>
+            <th>Hall Number</th>
+            <th>Capacity</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>158</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+    <script src="calendar.js"></script>
+    <!-- Fullcalendar -->
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.min.js"></script>
+
+
+</body>
+</html>

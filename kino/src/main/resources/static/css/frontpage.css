@@ -1,0 +1,206 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1c1a33;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #302e47;
+    padding: 2.5em;
+    z-index: 1000;
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 3.3em;
+}
+
+ul li a {
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+ul li a:hover {
+    color: #8e7cc3;
+}
+
+.container {
+    margin: 10em auto;
+    padding: 2em;
+    text-align: center;
+}
+
+.container:before {       /*  vesimärk */
+    position: absolute;
+    content: 'STARCINEMA';
+    top: 8rem;
+    left: 2rem;
+    font-size: 22rem;
+    color: rgba(248, 240, 240, 0.05);
+    
+}
+
+
+li {
+    color: #f5f5f5;
+    font-size: 1.6rem;
+}
+
+
+article {
+    width: 400px;
+    background-color: #2F3740;
+    padding: 1.123em;
+    border-radius: 1em;
+    margin-top: 20em;
+    margin-left: 3em;
+}
+
+img {
+    width: 100%;
+    border-radius: .4em;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 3rem;
+    margin-top: 4em;
+    margin-left: 3em;
+    border-bottom: 2px solid #6f7ce0;
+    
+}
+
+.articles-container {
+    margin-top: 5em;
+    margin-left: 2em;
+    height: 300px;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    margin-left: 2em;
+}
+
+.avatar {
+    grid-row: 1 / span 2; 
+    grid-column: 1;
+}
+
+.jurassic {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.coco {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.coco1 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.coco2 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+
+
+
+article {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+article h2 {
+    color: whitesmoke;
+}
+article p {
+    color: lightcyan
+}
+
+.buy-ticket-btn {
+    background-color: #6f7ce0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-ticket-btn:hover {
+    background-color: #4852a3;
+}
+
+/* Coming Soon*/
+
+.coming-soon-section {
+    text-align: center;
+    margin-top: 65em;
+    padding: 2em;
+}
+
+.coming-soon-section h1 {
+    color: whitesmoke;
+    font-size: 3rem;
+    margin-top: 5em;
+    margin-left: 3em;
+    text-align: left;
+    border-bottom: 2px solid #6f7ce0;
+}
+
+/* Coming Soon */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em; /* Ruumi piltide vahel */
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: .4em;
+    order: 1; /* Esialgne pildi järjekord */
+}
+
+.image-grid img:nth-child(even) {
+    order: -1; 
+}

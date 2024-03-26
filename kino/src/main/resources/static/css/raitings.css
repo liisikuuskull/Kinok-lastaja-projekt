@@ -1,0 +1,25 @@
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.movies li {
+    margin: 10px;
+    text-align: center;
+}
+
+.movies li img {
+    width: 200px; 
+    height: auto; 
+}
+
+.movies li h2 {
+    margin: 5px 0;
+}
+
+.movies li p {
+    margin: 5px 0;
+}

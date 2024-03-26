@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#movie-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+}
+
+.movie {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px; 
+    margin-bottom: 20px; 
+}
+
+.movie h2 {
+    margin-bottom: 10px; 
+}
+
+.movie p {
+    margin: 5px 0;
+}
+
+.movie a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.movie a:hover {
+    text-decoration: underline;
+}

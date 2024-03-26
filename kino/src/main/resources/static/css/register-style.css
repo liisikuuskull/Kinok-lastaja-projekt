@@ -1,0 +1,83 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #1c1a33;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+}
+
+.register-container {
+    max-width: 400px;
+    margin: 6px auto 0; 
+    padding: 20px;
+    border: none; 
+    border-radius: 5px;
+    background-color: #2F3740; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.register-container form label {
+    margin-bottom: 10px;
+    color:  white;
+}
+
+.register-container form input[type="text"],
+.register-container form input[type="password"],
+.register-container form input[type="email"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: black;
+}
+
+.register-container form input[type="text"]:focus,
+.register-container form input[type="password"]:focus,
+.register-container form input[type="email"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.register-container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #8e7cc3;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.register-container form input[type="submit"]:hover {
+    background-color: #6f7ce0;
+}
+
+.login-container form label {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em; 
+}
+
+footer a {
+    color: #6f7ce0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

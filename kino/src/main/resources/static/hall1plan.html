@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall 1 Chair Plan</title>
+
+    <link rel="stylesheet" href="css/frontpage.css">
+
+    <style>
+        
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto; 
+            margin-top: 7em;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            width: 30px; 
+            height: 30px; 
+        }
+        .free {
+            background-color: #50C878; 
+        }
+        .occupied {
+            background-color: red; 
+        }
+        .choose {
+            background-color: yellow; 
+        }
+        .btn-container {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .btn {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #6f7ce0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        h2 {
+            color:#fff!important;
+            font-family: 'Nunito', sans-serif;
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 3em;
+        }
+        label[for="seat-count"] {
+            color: white; 
+            font-size: 1.5rem;
+        }
+        footer {
+    text-align: center;
+    margin-top: 2em; 
+        }
+
+        footer a {
+            color: #6f7ce0;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Hall 1 Chair Plan</h2>
+
+<table id="chair-plan">
+</table>
+
+<div class="btn-container">
+    <label for="seat-count">Select number of seats:</label>
+    <input type="number" id="seat-count" min="1" max="20" value="1">
+    <button class="btn" id="confirm-btn">Confirm Selection</button>
+    <button class="btn" id="refresh-btn">Refresh Selection</button>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const chairPlanTable = document.getElementById("chair-plan");
+        const numberOfRows = 6;
+        const seatsPerRow = 20;
+        let chosenSeats = [];
+
+        // Function to generate chair plan
+        function generateChairPlan() {
+            for (let i = numberOfRows; i > 0; i--) {
+                const row = document.createElement("tr");
+                for (let j = 0; j < seatsPerRow; j++) {
+                    const seat = document.createElement("td");
+                    const seatNumber = (i - 1) * seatsPerRow + j + 1;
+                    seat.className = getRandomState();
+                    seat.textContent = `R${i}S${j + 1}`;
+                    seat.dataset.seatNumber = seatNumber;
+                    row.appendChild(seat);
+                }
+                chairPlanTable.appendChild(row);
+            }
+        }
+
+        // Function to generate random occupied or free state
+        function getRandomState() {
+            return Math.random() < 0.5 ? 'occupied' : 'free'; // 50% occupied, 50% free
+        }
+
+        // Function to choose seat
+        function chooseSeat(event) {
+            const selectedSeat = event.target;
+            const seatNumber = parseInt(selectedSeat.dataset.seatNumber);
+            const isOccupied = selectedSeat.classList.contains('occupied');
+            if (!isOccupied && chosenSeats.length < parseInt(document.getElementById('seat-count').value)) {
+                selectedSeat.classList.toggle('choose');
+                if (chosenSeats.includes(seatNumber)) {
+                    chosenSeats = chosenSeats.filter(seat => seat !== seatNumber);
+                } else {
+                    chosenSeats.push(seatNumber);
+                }
+            }
+        }
+
+        // Function to find and highlight available seats
+        function highlightAvailableSeats(count) {
+            const availableSeats = [];
+            for (let i = 0; i < numberOfRows; i++) {
+                for (let j = 0; j < seatsPerRow; j++) {
+                    const seatNumber = i * seatsPerRow + j + 1;
+                    if (!document.querySelector(`[data-seat-number="${seatNumber}"]`).classList.contains('occupied')) {
+                        availableSeats.push(seatNumber);
+                    }
+                }
+            }
+
+            let startIndex = Math.floor((seatsPerRow - count) / 2); // Start searching from the middle
+            if (startIndex < 0) startIndex = 0; // If there are more seats than available in a row
+
+            let found = false;
+            for (let i = 0; i < availableSeats.length; i++) {
+                let countFound = 1;
+                for (let j = 1; j < count; j++) {
+                    if (availableSeats[i + j] === availableSeats[i] + j) {
+                        countFound++;
+                    } else {
+                        break;
+                    }
+                }
+                if (countFound === count) {
+                    for (let j = 0; j < count; j++) {
+                        const seat = document.querySelector(`[data-seat-number="${availableSeats[i] + j}"]`);
+                        seat.classList.add('choose');
+                        chosenSeats.push(availableSeats[i] + j);
+                    }
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                alert('Could not find enough contiguous seats. Please choose a smaller number.');
+            }
+        }
+
+        // Generate chair plan
+        generateChairPlan();
+
+        // Event listeners
+        chairPlanTable.addEventListener('click', chooseSeat);
+        document.getElementById("confirm-btn").addEventListener("click", function() {
+            if (chosenSeats.length === parseInt(document.getElementById('seat-count').value)) {
+                const confirmMessage = `You have confirmed your selection! Your seats are: ${chosenSeats.map(seat => `R${Math.ceil(seat / seatsPerRow)}S${seat % seatsPerRow || seatsPerRow}`).join(', ')}`;
+                if (confirm(confirmMessage)) {
+                    window.location.href = "frontpage.html"; // Redirect to the home page
+                }
+            } else {
+                alert(`Please choose exactly ${document.getElementById('seat-count').value} seats.`);
+            }
+        });
+
+        document.getElementById("refresh-btn").addEventListener("click", function() {
+            location.reload(); // Reload the page to refresh the chair plan
+        });
+    });
+</script>
+
+<footer>
+    <a href="showtimes.html">Go Back</a>
+</footer>
+</body>
+</html>

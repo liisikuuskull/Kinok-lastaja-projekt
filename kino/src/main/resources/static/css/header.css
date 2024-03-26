@@ -1,0 +1,60 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1c1a33;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #302e47;
+    padding: 2.5em;
+    z-index: 1000;
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    gap: 3.3em;
+}
+
+ul li a {
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+ul li a:hover {
+    color: #8e7cc3;
+}
