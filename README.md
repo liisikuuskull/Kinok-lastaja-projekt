@@ -13,7 +13,18 @@ See projekt on veebirakendus kinokülastajatele, mis aitab kasutajatel filtreeri
 
 
 ##Käivitamine
- 
+Kasutajad saavad kloonida minu GitHubi projekti enda arvutisse kasutades järgmist käsku terminalis:
+git clone https://github.com/liisikuuskull/Kinokylastaja_projekt.git
+
+Lehe vaated:
+1.Esileht:http://127.0.0.1:5500/kino/src/main/resources/static/frontpage.html
+<img width="1432" alt="Screenshot 2024-03-26 at 16 11 05" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/ca74ccac-153d-4a88-a59d-9b804e1fa950">
+<img width="1406" alt="Screenshot 2024-03-26 at 16 11 31" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/ef445136-8a31-438a-9bce-d3c647e65644">
+<img width="1425" alt="Screenshot 2024-03-26 at 16 11 50" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/adf53319-5f9d-4790-8e75-2dc7a3fec2ea">
+
+2. Films http://127.0.0.1:5500/kino/src/main/resources/static/films.html
+<img width="1436" alt="Screenshot 2024-03-26 at 16 15 49" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/5b92d0e2-1bbf-4a53-92d8-14edac6e4b95">
+
 
 
 
@@ -35,8 +46,9 @@ Tegin mõned automaattestid Cypressiga:
 
 
 Testide käivitamine Cypressiga:
-  npx cypress open (see avab Cypressi kasutajaliidese)
-  npx cypress run (käivitab Cypress testimisskriptid otse terminalis)
+npm install (paigaldab projekti sõltuvused)
+npx cypress open (see avab Cypressi kasutajaliidese)
+npx cypress run (käivitab Cypress testimisskriptid otse terminalis)
 
 Manuaalne testimine TestRaili-ga:
 
@@ -48,7 +60,8 @@ Manuaalne testimine TestRaili-ga:
 
 
 ##Mysql
-Tegin andmebaasi nimega cinema. Seal sees on kaks tabelit filmide list ja paar testkasutajat. 
+Tegin andmebaasi nimega cinema. 
+Seal sees on kaks tabelit filmide list ja paar testkasutajat. 
 
 <img width="1434" alt="Screenshot 2024-03-26 at 15 35 17" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/f95dcc1a-4747-4ada-8c37-7b1da5b112b0">
 
