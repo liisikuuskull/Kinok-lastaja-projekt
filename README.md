@@ -78,7 +78,7 @@ Seal sees on kaks tabelit filmide list ja paar testkasutajat.
 
 
 ## Filmide raiting
-Filmide raitingu kuvamiseks lehel kasutasin sellist lehte nagu https://www.themoviedb.org/
+Filmide raitingu kuvamiseks lehel kasutasin sellist lehte nagu https://www.themoviedb.org/, seal ma tegin ennast kasutajaks ja võtsin API võtme.
 
 Tegin seda youtube-i video järgi, mille link on siin https://www.youtube.com/watch?v=9Bvt6BFf6_U
 
