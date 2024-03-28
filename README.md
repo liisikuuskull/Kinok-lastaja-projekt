@@ -1,10 +1,11 @@
-**#Kinokülastaja projekt**
+# Kinokülastaja projekt
 
 See projekt on veebirakendus kinokülastajatele, mis aitab kasutajatel filtreerida filme, osta pileteid seanssidele, valida istekohti jne.
 
 
 ## Kasutatud tehnoloogiad
 
+* Arendusvahend: Visual Studio Code (VS Code)
 * Back-end: PHP, Java
 * Andmebaas: MySQL
 * Front-end: HTML, CSS, JavaScript
@@ -39,7 +40,7 @@ Lehe vaated:
 
 <img width="1334" alt="Screenshot 2024-03-26 at 18 01 27" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/9cea9d32-2b60-47f2-a828-a3b60753b381">
 
-##Testimine
+## Testimine
 
 Tegin mõned automaattestid Cypressiga:
   
