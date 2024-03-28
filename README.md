@@ -77,6 +77,11 @@ Seal sees on kaks tabelit filmide list ja paar testkasutajat.
 <img width="1434" alt="Screenshot 2024-03-26 at 15 35 17" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/f95dcc1a-4747-4ada-8c37-7b1da5b112b0">
 
 
+## Filmide raiting
+Filmide raitingu kuvamiseks lehel kasutasin sellist lehte nagu https://www.themoviedb.org/
+
+Tegin seda youtube-i video järgi, mille link on siin https://www.youtube.com/watch?v=9Bvt6BFf6_U
+
 ##Tööks kulunud aeg
 
 Tegelesin selle projektiga peaaegu igapäev, nädalavahetustel mitte nii väga. Üritasin maksimaalselt seda aega ära kasutada, mis projekti tegemiseks anti. 
@@ -90,4 +95,5 @@ Tahtsin kasutada Spring Booti, kuid see ei õnnestunud, sest Maveniga oli mingi 
 
 ##Järeldus
 
-Kokkuvõttes oli projekt väljakutseid pakkuv, kuid õpetlik kogemus. Aega oleks võinud olla rohkem, sest back-endi pool oli raske. Spring Bootiga ma ei ole varem kokku puutunud ja otsisin netist selle kohta infot. Vaatasin, et www.udemy.com lehel on ka koolitusi selle kohta, aga kuna need olid sellel hetkel täishinnaga ei ostnud ma sealt midagi. Seda projekti saab edasi arendada ja keerukamaks muuta. 
+Kokkuvõttes oli projekt väljakutseid pakkuv, kuid õpetlik kogemus. Aega oleks võinud olla rohkem, sest back-endi pool oli raske. Spring Bootiga ma ei ole varem kokku puutunud ja otsisin netist selle kohta infot. Leidsin Spring Boot-i koolituse https://www.udemy.com/course/spring-hibernate-tutorial/?couponCode=GENAISALE24 , aga kahjuks see oli täishinnaga. Paar päeva enne tähtaja lõppu avastasin, et koolitus on soodustusega ja ostsin selle. Kahjuks ma ei jõudnud sellega väga kaugele.
+Seda projekti saab edasi arendada ja keerukamaks muuta. Ebavajalikud koodijupid saab ära kustutada (hetkel ma jätsin need veel alles). Koodi saab puhtamaks muuta.
