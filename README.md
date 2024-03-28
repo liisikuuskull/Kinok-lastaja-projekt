@@ -82,6 +82,10 @@ Filmide raitingu kuvamiseks lehel kasutasin sellist lehte nagu https://www.themo
 
 Tegin seda youtube-i video järgi, mille link on siin https://www.youtube.com/watch?v=9Bvt6BFf6_U
 
+<img width="1433" alt="Screenshot 2024-03-28 at 13 23 39" src="https://github.com/liisikuuskull/Kinokylastaja_projekt/assets/91655576/1f47e34c-1b5d-45b8-859d-c453221c82ff">
+
+
+
 ##Tööks kulunud aeg
 
 Tegelesin selle projektiga peaaegu igapäev, nädalavahetustel mitte nii väga. Üritasin maksimaalselt seda aega ära kasutada, mis projekti tegemiseks anti. 
