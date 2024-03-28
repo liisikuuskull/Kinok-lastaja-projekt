@@ -3,7 +3,7 @@
 See projekt on veebirakendus kinokülastajatele, mis aitab kasutajatel filtreerida filme, osta pileteid seanssidele, valida istekohti jne.
 
 
-##Kasutatud tehnoloogiad
+## Kasutatud tehnoloogiad
 
 * Back-end: PHP, Java
 * Andmebaas: MySQL
@@ -12,7 +12,7 @@ See projekt on veebirakendus kinokülastajatele, mis aitab kasutajatel filtreeri
 * Manuaalne testimine: TestRail
 
 
-##Käivitamine
+## Käivitamine
 Kasutajad saavad kloonida minu GitHubi projekti enda arvutisse kasutades järgmist käsku terminalis:
 git clone https://github.com/liisikuuskull/Kinokylastaja_projekt.git
 
@@ -70,7 +70,7 @@ Manuaalne testimine TestRaili-ga:
 
 
 
-##Mysql
+## Mysql
 Tegin andmebaasi nimega cinema. 
 Seal sees on kaks tabelit filmide list ja paar testkasutajat. 
 
@@ -86,18 +86,18 @@ Tegin seda youtube-i video järgi, mille link on siin https://www.youtube.com/wa
 
 
 
-##Tööks kulunud aeg
+## Tööks kulunud aeg
 
 Tegelesin selle projektiga peaaegu igapäev, nädalavahetustel mitte nii väga. Üritasin maksimaalselt seda aega ära kasutada, mis projekti tegemiseks anti. 
 
 
 
-##Raskused ja lahendused
+## Raskused ja lahendused
 
 Alguses tundus kõik raske, aga siis hakkasin lihtsalt midagi tegema ja tekkisid ideed kuidas üks või teine asi võiks olla. Vaatasin internetist, kuidas taolised lehed on tehtud. Sügisel tegin endale Portfoliot ja mõtlesin, et võiks seda koodi muuta ja hakata sinna peale seda lehte ülesse ehitama.
 Tahtsin kasutada Spring Booti, kuid see ei õnnestunud, sest Maveniga oli mingi jama. Siis ma üritasin back-endi poolt teha PHP-ga.
 
-##Järeldus
+## Järeldus
 
 Kokkuvõttes oli projekt väljakutseid pakkuv, kuid õpetlik kogemus. Aega oleks võinud olla rohkem, sest back-endi pool oli raske. Spring Bootiga ma ei ole varem kokku puutunud ja otsisin netist selle kohta infot. Leidsin Spring Boot-i koolituse https://www.udemy.com/course/spring-hibernate-tutorial/?couponCode=GENAISALE24 , aga kahjuks see oli täishinnaga. Paar päeva enne tähtaja lõppu avastasin, et koolitus on soodustusega ja ostsin selle. Kahjuks ma ei jõudnud sellega väga kaugele.
 Seda projekti saab edasi arendada ja keerukamaks muuta. Ebavajalikud koodijupid saab ära kustutada (hetkel ma jätsin need veel alles). Koodi saab puhtamaks muuta.
